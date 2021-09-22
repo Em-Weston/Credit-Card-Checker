@@ -6,17 +6,17 @@
 * [Setup](#setup)
 * [Project Status](#projectstatus)
 * [Sources](#sources)
-*[Other info](*otherinfo)
+* [Other info](*otherinfo)
 
 ## Introduction
-I am creating a credit card checker. This will check the validty of any credit card number passed to it. I am using the Luhn algorithm to return a true or false value, 
+I am creating a credit card checker. This will check the validty of any credit card number passed to it. I am using the Luhn algorithm to return a true or false value. It will also find the company that issued the faluty card. 
 
 	
 ## Technologies
 Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+* 
+
+
 
 
 
