@@ -127,3 +127,53 @@ const findInvalidCards = nestedArray => {
     }
     return invalidCards
   }
+
+  // Create a function, takes nestedArray, of invalid numbers
+// var CompanyArray
+// Switch (first digit) 
+//  if 3 return 
+//  dont need to grab the whole array, only need the first digits. 
+// dont need to return a company more than once 
+
+const idInvalidCardCompanies = (nestedArrInvalidNums) => {
+    var copyArray = []
+    for(let i = 0; i < nestedArrInvalidNums.length; i++ ){
+      // console.log(nestedArrInvalidNums[i].shift())
+      let number = nestedArrInvalidNums[i].shift()
+      console.log('The number is: ' + number)
+      copyArray.push(number)
+      console.log('The array: ' + copyArray)
+    // nestedArrInvalidNums[i].shift()
+    // console.log(nestedArrInvalidNums)
+
+  }
+  const num3 = copyArray.findIndex(num => num === 3) 
+  if (copyArray[num3] === 3) {
+    companies.push('Amex')
+    console.log(companies)
+  } 
+  const num4 = copyArray.findIndex(num => num === 4) 
+  if (copyArray[num4] === 4 ){
+    companies.push('Visa')
+    console.log(companies)
+  }
+  const num5 = copyArray.findIndex(num => num === 5) 
+  if (copyArray[num5] === 5 ){
+    companies.push('Mastercard')
+    console.log(companies)
+  }
+  const num6 = copyArray.findIndex(num => num === 6) 
+  if (copyArray[num6] === 6 ){
+    companies.push('Discover')
+    console.log(companies)
+  }
+  const otherNum = copyArray.findIndex(num => num === -1) 
+  if (copyArray[otherNum] !== 3 || copyArray[otherNum] !== 4 || copyArray[otherNum] !== 5 || copyArray[otherNum] !== 6 ){
+    console.log("Company not found")
+  }
+  // return companies
+  }
+  idInvalidCardCompanies(invalidCards)
+  
+    // This is not quite working correctly, Ideally, want to try a method to check for all numbers at once, 
+    // and then perhaps a switch statement to work through them 
