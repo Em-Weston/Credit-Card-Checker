@@ -113,3 +113,17 @@ if((array.length-1) % 2 === 0) {
   }
 }
 
+// function to find invalid card numbers, takes a nested array
+const findInvalidCards = nestedArray => {
+    const invalidCards = [];
+    // iterate through and pass to validateCred
+    const current = nestedArray.map(validateCred)
+    // loop though the new array of false or correct numbers 
+      for(let i = 0; i < current.length; i++) {
+        //   if false, grab that number and push to invalidCards
+    if (current[i] === false) {
+      invalidCards.push(nestedArray[i])
+    } 
+    }
+    return invalidCards
+  }
